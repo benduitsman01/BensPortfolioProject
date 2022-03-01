@@ -124,25 +124,6 @@ img {
 ==========*/
 
 
-
-
-
-
-
-/* HOME IMAGE SKYDIVING !((#!@(#(@!#(!@# CHANGE LATER  */
-.home__handle{
-  position: relative;
-  justify-content: center;
-  width: 50rem;
-  height: 50rem;
-}
-/* skydiving pictures above.  */
-
-
-
-
-
-
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 968px;
@@ -239,7 +220,10 @@ img {
 }
 
 /* Change background header */
+.scroll-header{
+  box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
 
+}
 
 /*=============== HOME ===============*/
 .home__container{
@@ -273,8 +257,11 @@ text-align: center;
   font-size: var(--biggest-font-size);
 }
 
-.home_img{
-  width: 160px;
+/* adjust the IMG below later, to suit the front page. */
+.home__img{
+  width: 220px;
+  height: 300px;
+
 }
 
 .home__handle{
@@ -374,14 +361,135 @@ text-align: center;
 }
 
 /*=============== ABOUT ===============*/
+.about__container{
+  row-gap: 2.5rem;
+}
 
+.about__img{
+  width: 220px;
+  border-radius: 1.5rem;
+  justify-self: center;
+}
 
+.about__data{
+  text-align: center;
+}
+
+.about__info{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+  margin-bottom: 2rem;
+}
+
+.about__box{
+  background-color: var(--container-color);
+  border-radius: .75rem;
+  padding: .75rem .5rem;
+}
+
+.about__icon{
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: .5rem;
+}
+
+.about__title{
+  font-size: var(--small-font-size);
+}
+
+.about__subtitle{
+  font-size: var(tiny-font-size);
+}
+
+.about__description{
+margin-bottom: 2rem;
+}
 /*=============== SKILLS ===============*/
+.skills__container{
+  row-gap: 2rem;
+  padding-top: 1rem;
+}
 
+.skills__content{
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+}
+
+.skills__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.skills__box{
+  display: flex;
+  justify-content: center;
+  column-gap: 2.5rem;
+}
+
+.skills__group{
+  display: grid;
+  align-content: flex-start;
+  row-gap: 1rem;
+}
+
+.skills__data{
+  display: flex;
+  column-gap: .5rem;
+}
+
+.skills .bxs-badge-check{
+  font-size: 1rem;
+  color: var(--first-color);
+}
+
+.skills__name{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 18px;
+}
+
+.skills__level{
+  font-size: var(--tiny-font-size);
+}
 
 /*=============== SERVICES ===============*/
+.services__container{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
 
+.services__card{
+  background-color: var(--container-color);
+}
 
+services__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: 2.5rem;
+}
+
+.services__button{
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+  cursor: pointer;
+}
+
+.services__button:hover .services__icon{
+transform: translateX(.25rem);
+}
+
+.services__icon{
+  font-size: 1rem;
+  transition: .4s;
+}
 /* Services modal */
 
 
